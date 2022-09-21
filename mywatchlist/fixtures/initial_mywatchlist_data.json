@@ -1,0 +1,112 @@
+[
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 1,
+        "fields": {
+            "watched": "Yes",
+            "title": "War Dogs",
+            "rating": 3.9,
+            "release_date": "October 7, 2016",
+            "review": "A really well done film that doesn't need to be flashy or intense to make its voice heard."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 2,
+        "fields": {
+            "watched": "Yes",
+            "title": "Central Intelligence",
+            "rating": 3.5,
+            "release_date": "June 15, 2016",
+            "review": "It's a nice little comedy, not too serious and easy to watch. The humour is innocent, the chemistry is fun and the action for a comedy film is surprisingly decent.."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 3,
+        "fields": {
+            "watched": "Yes",
+            "title": "Deadpool",
+            "rating": 4.2,
+            "release_date": "May 15, 2018",
+            "review": "One of the greatest anti-hero - the Merc with a mouth - Wade Wilson was once a special forces operative but turned mercenary.."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 4,
+        "fields": {
+            "watched": "Yes",
+            "title": "Theory of Everything",
+            "rating": 3.8,
+            "release_date": "November 7, 2014",
+            "review": "The Theory of Everything is not just a story about the science behind the beginnings of our universe, but the science of love; and how life's challenges that we face everyday, shape who we are and what we achieve"
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 5,
+        "fields": {
+            "watched": "Yes",
+            "title": "The Wolf of Wall Street",
+            "rating": 4.1,
+            "release_date": "October 7, 2016",
+            "review": "It's a rollercoaster ride which takes Jordan from nobody to a rich man. This movie was quite inspiring and I absolutely enjoyed Belforts character."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 6,
+        "fields": {
+            "watched": "No",
+            "title": "Danur",
+            "rating": 2.5,
+            "release_date": "September 26, 2019",
+            "review": "Danur memang selalu menampilkan karakter hantu yang enggak enak dipandang mata. Jadi, enggak usah heran jika hantu di Danur 3 ini menyeramkan."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 7,
+        "fields": {
+            "watched": "No",
+            "title": "Ghostbusters : Afterlife",
+            "rating": 3.5,
+            "release_date": "November 11, 2021",
+            "review": "Pretty much perfect in every way!  At the beginning of everything, and watching the trailers being honest I wasn't sure of what to completely think."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 8,
+        "fields": {
+            "watched": "No",
+            "title": "Day Shift",
+            "rating": 3.5,
+            "release_date": "August 12, 2022",
+            "review": "Vampire action action-thrillers in Hollywood are a dime a dozen, with the standard set by the golden age of Wesley Snipes’ Blade Trilogy (1998-2004) as well as Kate Beckinsale’s Underworld Pentalogy (2003-2016). ."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 9,
+        "fields": {
+            "watched": "Yes",
+            "title": "Doctor Strange : Multiverse of madness",
+            "rating": 4,
+            "release_date": "May 5, 2022",
+            "review": "Finally a marvel movie that is serious,  more violent, and a bit amount of gore for a pg-13 rating which is pretty good use for it."
+        }
+    },
+    {
+        "model": "mywatchlist.MyWatchlist",
+        "pk": 10,
+        "fields": {
+            "watched": "No",
+            "title": "Me Time",
+            "rating": 2.5,
+            "release_date": "August 26, 2022",
+            "review": "Art is always an object of fascination to anthropologists because it reflects the psychological, political, social, and philosophical states of the group in study.."
+        }
+    }
+]

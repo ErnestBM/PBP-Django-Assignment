@@ -9,9 +9,3 @@ class CatalogItem(models.Model):
     item_url = models.URLField()
 
 
-from django.db import models
-
-class BarangKatalog(models.Model):
-    nama_barang = models.CharField(max_length=50)
-    harga_barang = models.IntegerField()
-    deskripsi = models.TextField()
