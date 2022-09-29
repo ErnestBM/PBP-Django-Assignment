@@ -19,7 +19,7 @@ from datetime import date
 
 @login_required(login_url='/todolist/login/')
 def show_todolist(request):
-    todo = Task.objects.all()
+    todo = Task.objects.filter(user=request.user)
     context = {
         'list_todo': todo,
         'nama': 'Ernest Benedictus',
