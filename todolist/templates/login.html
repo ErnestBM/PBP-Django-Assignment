@@ -4,33 +4,80 @@
 <title>Login</title>
 {% endblock meta %}
 
+
 {% block content %}
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+  body {
+    background-color: #90a4ce;
+  }
+  .primary-heading {
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: #2E3532;
+  }
+  h1, h3, h4 {
+    font-size: xx-large;
+    color: #2E3532;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+.button {
+  border-radius: 5px;
+  background-color: #94849B;
+  padding: 10px 16px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+fontB {
+  color: #2E3532;
+  font-size: small;
+  font-family: 'Poppins';
+}
+.card {
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 300px;
+  border-radius:5px;
+  background-color: #A0AAB2;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 15px 25px #2E3532;
+}
+</style>
 
-<div class = "login">
-
-    <h1>Login</h1>
-
-    <form method="POST" action="">
-        {% csrf_token %}
-        <table>
-            <tr>
-                <td>Username: </td>
-                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
-            </tr>
-                    
-            <tr>
-                <td>Password: </td>
-                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
-            </tr>
-
-            <tr>
-                <td></td>
-                <td><input class="btn login_btn" type="submit" value="Login"></td>
-            </tr>
-        </table>
-    </form>
-
-    {% if messages %}
+<body>
+    <div ALIGN = 'center'>
+        <h1 class="primary-heading"> Login</h1>
+        <form method="POST" action="">
+            {% csrf_token %}
+            <table>
+                <tr>
+                    <td>Username: </td>
+                    <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+                </tr>
+                        
+                <tr>
+                    <td>Password: </td>
+                    <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+                </tr>
+    
+                <tr>
+                    <td></td>
+                    <td><input class="btn login_btn" type="submit" value="Login"></td>
+                </tr>
+            </table>
+        </form>
+        {% if messages %}
         <ul>
             {% for message in messages %}
                 <li>{{ message }}</li>
@@ -39,7 +86,6 @@
     {% endif %}     
         
     Belum mempunyai akun? <a href="{% url 'todolist:register' %}">Buat Akun</a>
-
-</div>
+    </div>
 
 {% endblock content %}

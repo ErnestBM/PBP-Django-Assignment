@@ -1,37 +1,70 @@
 {% extends 'base.html' %}
 
- {% block content %}
+{% block content %}
 
-  <h1>Tugas 4 PBP/PBD</h1>
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<style>
+  body {
+    background-color: #90a4ce;
+  }
+  .primary-heading {
+    font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 30px;
+    color: #2E3532;
+  }
+  h1, h3, h4 {
+    font-size: xx-large;
+    color: #2E3532;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-family: 'Poppins';
+    text-align: center;
+  }
+.button {
+  border-radius: 5px;
+  background-color: #94849B;
+  padding: 10px 16px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Poppins';
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+fontB {
+  color: #2E3532;
+  font-size: small;
+  font-family: 'Poppins';
+}
+.card {
+  margin-right: auto;
+  margin-left: auto;
+  width: 250px;
+  height: 300px;
+  border-radius:5px;
+  background-color: #A0AAB2;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 15px 25px #2E3532;
+}
+</style>
 
-  <h5>Name        : {{nama}}</h5> 
-
-  <h5>Student ID  : {{NPM}}</h5>
-
-  <h5>{{info}}</h5>  
-
-  <table>
-    <tr>
-      <th>User</th>
-      <th>Date</th>
-      <th>Title</th>
-      <th>Description</th>
-    </tr>
-    {% comment %} Add the data below this line {% endcomment %}
-
-    {% for task in list_todo %}
-    <tr>
-        <th>{{task.user}}</th>
-        <th>{{task.date}}</th>
-        <th>{{task.title}}</th>
-        <th>{{task.description}}</th>
-    </tr>
-
-{% endfor %}
-  </table>
-
-  <button><a href="{% url 'todolist:add_task' %}">Tambah</a></button>
-  <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
-
-
+ <body>
+    <div ALIGN = 'center'>
+      <h1 class="primary-heading"> To-do List</h1>
+      <h4> Mari nguli! </h4>
+      <button><a href="{% url 'todolist:add_task' %}">Add To-do</a></button>
+      {% for task in list_todo%}
+      <div class="card">
+        <h1 style = "text-align: center;">{{task.title}}</h1>
+        <fontB style = "text-align: center;">{{task.date}}</fontB>
+        <div></div>
+        <fontB style = "text-align: center;">{{task.description}}</fontB>
+      </div>
+      {% endfor%}
+      <button><a href="{% url 'todolist:logout' %}">Logout</a></button>
+    </div>
+ </body>
  {% endblock content %}
