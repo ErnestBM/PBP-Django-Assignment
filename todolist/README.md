@@ -1,3 +1,4 @@
+Tugas 4
 Apa kegunaan {% csrf_token %} pada elemen <form>? Apa yang terjadi apabila tidak ada potongan kode tersebut pada elemen <form>?
 Berdasarkan https://owasp.org/www-community/attacks/csrf, Cross-Site Request Forgery adalah serangan yang memaksa pengguna akhir untuk 
 melakukan tindakan yang tidak diinginkan pada aplikasi web tempat mereka saat ini diautentikasi. Dengan sedikit bantuan rekayasa sosial 
@@ -74,3 +75,25 @@ Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas.
   
   
 Sekian terima kasih.
+
+
+
+Tugas 5
+Apa perbedaan dari Inline, Internal, dan External CSS? Apa saja kelebihan dan kekurangan dari masing-masing style?
+Inline CSS menyematkan setting elemen tepat setelah men-declare objek yang dibuat. Styling dengan inline CSS dapat dilakuk dengan menambahkan atribut style ke tag HTML. Tipe ini dapat membantu pemahaman kode karena styling ditempatkan tepat di sebelah deklarasi objek, namun cenderung tidak efisien karena setiap objek perlu di-style satu per satu.
+Internal CSS membuat setting styling di file yang sama, namun tidak tepat di sebelah objek yang dibuat. Alhasil, programmer tidak perlu menuliskan styling yang sama setiap kali membuat objek, namun juga meningkatkan running time dari program tersebut. 
+Mirip dengan Internal CSS, External CSS juga membuat setting styling dari tiap elemen di luar pembuatan objek. Bedanya, tipe ini menyematkan styling di luar file html. Maka dari itu, file html akan terlihat lebih rapi, namun berpotensi menimbulkan error pada webpage karena styling CSS berada di luar file html.
+
+Jelaskan tag HTML5 yang kamu ketahui!
+- <h1> - <h4>     : Font header pada teks
+- <a>             : Me-link objek HTML ke sebuat tautan
+- <p>             : Membuat format paragraf
+- <style>         : Menerapkan CSS styling pada tipe Internal CSS
+
+Jelaskan tipe-tipe CSS selector yang kamu ketahui!
+- CSS ID Selector : selector yang mengenakan karakter # dan dilanjutkan dengan nama elemen
+- CSS Element Selector : selector yang memilih elemen berdasarkan nama tag HTML yang dideklarasi
+- CSS Class Selector : selector yang mengenakan karakter . dan dilanjutkan dengan nama class
+
+Jelaskan bagaimana cara kamu mengimplementasikan checklist di atas!
+Pada masing-masing file html, saya membuat styling CSS dengan tipe Internal CSS. Setelah mendeskripsikan setiap class, saya mulai mengimplementasikan styling pada bagian logika utama dari file html yang tertaut pada file views.py. Saya mengulangi langkah-langkah tersebut untuk file login.html, register.html, create_task.html, dan todolist.html.
